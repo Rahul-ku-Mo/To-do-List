@@ -1,0 +1,139 @@
+*{
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+body{
+    background: linear-gradient(90deg,rgb(255, 192, 203),violet);
+}
+
+.box{
+    background: whitesmoke;
+    margin:auto;
+    width:400px;
+    min-height: 500px;
+    display: flex;
+    flex-direction: column;
+    border-radius:12px;
+    padding: 10px;
+    box-shadow: 10px 20px 20px rgba(0, 0, 0, 0.137);
+    
+}
+.box-name{
+        font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        text-align: center;
+}
+.box-header{
+    display: flex;
+    padding: 0 10px ;
+    justify-content: space-between;
+    align-items: center;
+}
+.box-body{
+    height: 300px;
+    overflow-y: auto;
+}
+
+.row{
+    padding: 10px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    column-gap: 10px;
+    list-style: none;
+   
+    transition: all 250ms ease-out;
+}
+
+.un-list{
+    padding: 0px;
+}
+.btn,.edit_btn{
+    border-radius:2em;
+    padding: 10px;
+    font-size: 1em;
+    transition: all 250ms ease-out;
+    border:1px solid rgba(0, 0, 0, 0.384)
+}
+.btn:hover{
+    background-color:red;
+    color: white;
+}
+
+.add-text {
+    height: 40px;
+    font-size: 15px;
+    border: 1px solid #dce4ec;
+    width: 74%;
+    margin-right: 15px;
+    border-radius: 2em;
+    padding: 5px 10px;
+    transition: border 250ms ease-out;
+  }
+
+.add-text:focus {
+    border: 1px solid;
+    outline: none;
+  }
+
+.add-lists{
+    display: flex;
+    justify-content: space-between;
+    font-size: 15px;
+}
+
+.add_btn:hover{
+    background-color:rgb(32, 230, 32);
+}
+
+.text-label{
+    flex-basis: 100%;
+    /* text-decoration: line-through; */
+    font-size:18px;
+    
+}
+
+li:hover{
+    background-color: rgba(82, 119, 82, 0.185);
+}
+
+.edit_btn:hover{
+    background-color:rgb(243, 209, 18);
+}
+
+.modal{
+    background: whitesmoke;
+    margin:auto;
+    width:400px;
+    min-height: 100px;
+    display: block;
+    flex-direction: column;
+    border-radius:12px;
+    padding: 10px;
+    box-shadow: 10px 20px 20px rgba(0, 0, 0, 0.137);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 70%;
+     background-color: white;
+    padding: 3rem;
+    border-radius: 5px;
+    box-shadow: 0 3rem 5rem rgba(0, 0, 0, 0.3);
+    z-index: 10;
+}
+
+.hidden{
+    display: none;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(3px);
+    z-index: 5;
+  }
